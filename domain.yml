@@ -1,0 +1,90 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - mood_disgusted
+  - mood_angry
+  - mood_fear
+  - mood_surprise
+  - mood_scared
+  - ask_song
+  - ask_bot
+  - bot_annoying
+  - bot_bad
+  - bot_compliment
+  - no_problem
+  - bot_how_are_you
+  - welcome
+
+slots:
+  song:
+    type: text
+
+actions: 
+  - action_get_song
+  
+entities:
+  - final_emotion
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi! How has your day been?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Oh, don't be sad. Go do something you enjoy."
+  - text: "Sad? Writing down what's troubling you may help."
+  - text: "If you're feeling down, how about drawing or painting something?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_did_not_help:
+  - text: "I'm sorry to hear that."
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "Glad to know that you feel good"
+
+  utter_scared:
+  - text: "Oh no, I would hug you if I was there right now."
+  - text: "Take deep breaths, it helps a lot and will calm you down."
+
+  utter_surprise:
+  - text: "Yes, I am surprised too."
+
+  utter_goodbye:
+  - text: "See you soon!"
+  - text: "Bye-bye!"
+  - text: "Till next time!"
+  - text: "Bye."
+
+  utter_iamabot:
+  - text: "I am a bot which suggests songs based on your mood! Ask for a song at any time in the conversation. I am powered by Rasa, an open-source framework for chatbots."
+  
+  utter_song:
+  - text: "Check this song out! {song}"
+
+  utter_angry:
+  - text: "I can give you a song to help calm down. Request for a song."
+
+  utter_how_are_you:
+  - text: "My day has been good, hope yours has been good as well."
+
+  utter_annoying:
+  - text: "I'll do my best to not annoy you."
+
+  utter_bad_bot:
+  - text: "Sorry, I am a bot and I'm always striving to be better."
+  - text: "I can improve with continuous feedback. My training is ongoing."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

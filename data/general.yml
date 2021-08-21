@@ -1,0 +1,394 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hiya
+    - hellu
+    - morning!
+    - yo
+    - whats up
+    - sup
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - bai
+
+- intent: affirm
+  examples: |
+    - Accept
+    - Awesome!
+    - Good
+    - Great
+    - I accept
+    - I agree
+    - I am using it
+    - I changed my mind. I want to accept it
+    - I do
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will!
+    - I'm using it
+    - Nice
+    - Of course
+    - Oh yes
+    - Oh, ok
+    - Ok
+    - Okay
+    - Please
+    - Sure
+    - Sweet
+    - That would be great
+    - yes
+    - YUP
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yes please!
+    - Yes, I accept
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fine
+    - go ahead
+    - go for it
+    - good.
+    - great
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - k
+    - kk
+    - lets do it
+    - lets do this
+    - not bad
+    - ofcoure i do
+    - oh awesome!
+    - oh cool
+    - oh good !!
+    - oh super
+    - oki doki
+    - okie
+    - ook
+    - perfect
+    - sort of
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - thanks but no thanks
+    - it sucks
+
+- intent: mood_great
+  examples: |
+    - I am happy
+    - I feel good
+    - I laughed a lot today
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - It was a good day
+    - Great day
+    - fun day
+    - nice day
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - depressed
+  
+- intent: mood_disgusted
+  examples: |
+    - Ewww
+    - I am disgusted
+    - I feel like puking
+    - That is gross
+    - I feel nauseated
+
+- intent: mood_angry
+  examples: |
+    - I am angry
+    - I am furious
+    - I am annoyed
+    - Annoying
+    - You provoked me
+    - This is irritating
+  
+- intent: mood_fear
+  examples: |
+    - I am scared
+    - I peed my pants
+    - Anxious
+    - Ahhhhhh
+    - I am worried
+    - I feel uneasy
+  
+- intent: mood_surprise
+  examples: |
+    - Wow
+    - Shocking
+    - I am amazed by this
+    - I am surprised by this
+
+- intent: ask_song
+  examples: |
+    - Tell me a song
+    - Give me a song
+    - What should I listen to
+    - Please suggest some songs to me
+    - What song are you thinking of
+    - Do you have a song for me
+
+- intent: ask_bot
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - all about you
+    - what is your personality
+    - define yourself
+    - what are you
+    - say about you
+    - introduce yourself
+    - describe yourself
+    - about yourself
+    - tell me about you
+    - tell me about yourself
+    - I want to know more about you
+    - I want to know you better
+    - talk some stuff about yourself
+    - tell me some stuff about you
+    - talk about yourself
+    - why are you here
+    - tell me about your personality
+    - who are you
+
+- intent: bot_annoying
+  examples: |
+    - you're annoying
+    - you are really annoying
+    - you are irritating
+    - you annoy me
+    - how annoying you are
+    - I find you annoying
+    - you're incredibly annoying
+    - you are annoying me so much
+
+- intent: bot_bad
+  examples: |
+    - you're not helping me
+    - you are bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're the worst
+    - pretty bad
+    - not good enough
+    - that was lame
+    - that was terrible
+    - it is bad
+    - that's bad
+    - this is bad
+    - not good
+    - I'm afraid it's bad
+    - no it's bad
+    - that was awful
+    - bad
+    - so bad
+    - this is too bad
+    - terrible
+    - horrible
+    - horrific
+    - abysmal
+    - it's bad
+    - no good
+    - that was bad
+    - that was horrible
+    - that's lame
+    - that's not good
+    - that's terrible
+    - that's too bad
+    - this is not good
+    - too bad
+    - very bad
+    - bad girl
+    - it's not good
+    - not so good
+    - it's very bad
+    - it's too bad
+    - that's not good enough
+    - well too bad
+    - bad very bad
+    - it's so bad
+    - really bad
+    - it's really bad
+    - bad idea
+    - that is bad
+    - that was not good
+    - it's not so good
+    - not a good one
+    - oh that's not good
+    - not too good
+    - so lame
+    - that's really bad
+    - it is too bad
+    - bad really bad
+
+
+- intent: bot_compliment
+  examples: |
+    - you're amazing
+    - you are amazing
+    - you are cool
+    - you are fantastic
+    - you are wonderful
+    - you are very good at it
+    - you rock
+    - i want to tell everyone how awesome you are
+    - you are very kind
+    - thank you
+    - thanks a lot
+
+- intent: no_problem
+  examples: |
+    - no worries
+    - no probs
+    - no problem
+    - there's no problem
+    - sure no problem
+    - no problem about that
+    - don't worry
+    - don't worry there's no problem
+
+- intent: bot_how_are_you
+  examples: |
+    - how is your morning so far
+    - how are you getting on
+    - how's your day going
+    - how are you
+    - is everything all right
+    - how are you doing
+    - how are the things going
+    - are you alright
+    - are you okay
+    - how are you feeling
+    - how are you going
+    - is everything okay
+    - how are you today
+    - how do you do
+    - how do you feel
+    - how have you been
+    - how is it
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how was your day
+    - are you having a good day
+    - hope your day is going well
+    - hope you re having a pleasant evening
+    - how's life
+    - I'm fine and you
+    - how is your life
+    - how has your day been
+    - how is your morning going
+    - how has your day been going
+    - how about you
+    - how is your day being
+    - how is your day going on
+    - how your day is going
+    - what was your day like
+    - what about your day
+    - how's your day
+    - how are you doing this morning
+    - how is your day going
+
+- intent: welcome
+  examples: |
+    - you are welcome!
+    - you're welcome
+    - glad to be of help

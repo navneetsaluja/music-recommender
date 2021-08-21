@@ -1,0 +1,83 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_did_not_help
+
+- story: scared path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_scared
+  - action: utter_scared
+
+- story: surprise path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_scared
+  - action: utter_surprise
+
+- story: angry
+  steps:
+  - intent: mood_angry
+  - action: utter_angry
+
+- story: bot annoying
+  steps:
+  - intent: bot_annoying
+  - action: utter_annoying
+
+- story: bot annoying
+  steps:
+  - intent: bot_annoying
+  - action: utter_annoying
+
+- story: bot bad
+  steps:
+  - intent: bot_bad
+  - action: utter_bad_bot
+
+- story: compliment
+  steps:
+  - intent: bot_compliment
+  - action: utter_happy
+
+- story: ask bot how are you part 1
+  steps:
+  - intent: bot_how_are_you
+  - action: utter_how_are_you
+  - intent: affirm
+  - action: utter_happy
+
+- story: ask bot how are you part 1
+  steps:
+  - intent: bot_how_are_you
+  - action: utter_how_are_you
+  - intent: deny
+  - action: utter_cheer_up
